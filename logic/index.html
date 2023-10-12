@@ -6,7 +6,7 @@
     <title>Document</title>
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="../dist/style.css" />
-    
+
     <script src="app.js" defer></script>
   </head>
 
@@ -15,7 +15,7 @@
       <form id="frm">
         <label class="text-lime-200">
           Age
-          <input type="number" class="mx-24  rounded-md text-black px-4" />
+          <input type="number" class="mx-24 rounded-md text-black px-4" />
         </label>
         <button
           type="button"
@@ -24,6 +24,20 @@
           send
         </button>
       </form>
+    </div>
+    <div class="font-sans text-center px-4">
+      <h1 id="writer" class="text-center font-bold text-slate-700 mt-2"></h1>
+      <p id="quote" class="text-center text-slate-900 mt-2"></p>
+      <div
+        id="loading"
+        class="ml-60 border-2 rounded-full border-blue-100 border-t-blue-500 h-10 w-10 animate-spin hidden"
+      ></div>
+      <button
+        id="getQoute"
+        class="bg-blue-400 text-white text-center capitalize border border-teal-600 mt-2 px-4 py-2 rounded-md"
+      >
+        get quote
+      </button>
     </div>
   </body>
 </html>
