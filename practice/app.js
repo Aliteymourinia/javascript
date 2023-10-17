@@ -66,6 +66,7 @@ inform("bye");
 // let result = math(50, 2);
 // console.log(result);
 
+
 function math(x, y) {
   return x + y;
 }
