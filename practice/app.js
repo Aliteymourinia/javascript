@@ -159,3 +159,12 @@ addNum(5, 10);
 
 //fat arrow =>
 
+//class:
+
+class Person{
+  constructor (firstName,lastName,birthDay){
+    this.firstName=firstName;
+    this.lastName=lastName;
+    this.birthDay=birthDay;
+  }
+}
