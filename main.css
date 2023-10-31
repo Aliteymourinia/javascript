@@ -7,3 +7,9 @@
     @apply box-border;
   }
 }
+:root {
+  --img-repeat: bg-no-repeat;
+  --img-cover: bg-cover;
+  --img-width: w-[50%];
+  --img-height: h-[25em];
+}
