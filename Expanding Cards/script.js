@@ -19,5 +19,6 @@ container.addEventListener("click", (e) => {
       panel.classList.remove("grow");
     });
   clickedPanel.classList.add("grow");
+  clickedPanel.classList.add("transition-all")
   clickedPanel.querySelector("h3").classList.remove("opacity-0");
 });
