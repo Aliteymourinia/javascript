@@ -1,12 +1,10 @@
-const progress = document.querySelector(".progress");
-const btnPrimary = document.querySelector(".btnPrimary");
-btnPrimary.addEventListener("click", () => {
-  const clickedButton = target(".btnPrimary");
-  if (clickedButton)
- progress.document.querySelector(".progress")
-progress.classList.add("w-24")
+const progress = document.querySelector("#progress");
+const next = document.querySelector("#next");
+const prev = document.querySelector("#prev");
+const circles = document.querySelectorAll(".circle");
+let currentActive = 1;
+next.addEventListener("click", () => {
+  currentActive++;
+
+  console.log(currentActive);
 });
-
-btnPrimary.classList.add("");
-
-console.log(btn);
