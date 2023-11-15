@@ -3,14 +3,13 @@ const next = document.querySelector("#next");
 const prev = document.querySelector("#prev");
 const circles = document.querySelectorAll(".circle");
 let currentActive = 1;
+
 next.addEventListener("click", () => {
   currentActive++;
-
   if (currentActive > circles.length) {
     currentActive = circles.length;
   }
 });
-
 // prev.addEventListener("Click", () => {
 //   currentActive--;
 //   if (currentActive < 1) {
