@@ -10,19 +10,9 @@ next.addEventListener("click", () => {
     currentActive = circles.length;
   }
 });
-// prev.addEventListener("Click", () => {
-//   currentActive--;
-//   if (currentActive < 1) {
-//     currentActive = 1;
-//   }
-//   update();
-// });
-// function update() {
-//   circles.forEach((circle, idx) => {
-//     if (idx < currentActive) {
-//       circle.classList.add("border-blue-500");
-//     } else {
-//       circle.classList.remove("border-blue-500");
-//     }
-//   });
-// }
+prev.addEventListener("click", () => {
+  currentActive++;
+  if (currentActive < 1) {
+    currentActive = 1
+  }
+});
