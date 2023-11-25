@@ -9,16 +9,12 @@ next.addEventListener("click", () => {
   prev.disabled = false;
   prev.style.border = "#3B83F6";
   prev.style.borderStyle = "#3B83F6";
-  if (currentActive > circles.length) {
-    currentActive === circles.length;
-  }
   progress.style.width = pixelValues[currentActive] + "px";
   circles.forEach((circle, index) => {
     if (index === currentActive) {
       circle.style.borderColor = "#3B83F6";
     }
   });
-  console.log(currentActive);
 });
 prev.addEventListener("click", () => {
   prev.classList.add("active:scale-95");
@@ -35,8 +31,3 @@ prev.addEventListener("click", () => {
     }
   });
 });
-
-console.log(currentActive);
-
-// currentActive--;
-// progress.style.width = pixelValues[currentActive-1] + "px";
