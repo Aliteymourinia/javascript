@@ -3,13 +3,12 @@ const next = document.querySelector("#next");
 const prev = document.querySelector("#prev");
 const circles = document.querySelectorAll(".circle");
 let currentActive = 0;
-circles.length === currentActive;
 const pixelValues = [, 260, 560, 860];
 next.addEventListener("click", () => {
   currentActive++;
+  prev.disabled = false;
   prev.style.border = "#3B83F6";
   prev.style.borderStyle = "#3B83F6";
-  prev.disabled = false;
   if (currentActive > circles.length) {
     currentActive === circles.length;
   }
@@ -29,13 +28,12 @@ prev.addEventListener("click", () => {
   } else {
     prev.disabled = true;
     progress.style.width = "";
-    circles.forEach((circle, index) => {
-
-      if (index === currentActive) {
-        circle.style.borderColor = "#3B83F6";
-      }
-    }
   }
+  circles.forEach((circle, index) => {
+    if (index > currentActive) {
+      circle.style.borderColor = "";
+    }
+  });
 });
 
 console.log(currentActive);
