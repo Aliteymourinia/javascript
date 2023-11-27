@@ -12,45 +12,47 @@
     />
     <title>My Project</title>
   </head>
-  <body class="flex flex-col items-center justify-center h-full m-0">
+  <body class="flex flex-col items-center justify-center h-full m-0 relative">
+    <!-- <img
+      id="backgroundImage"
+      class="w-full h-full object-cover absolute z-[0]"
+      src="./gray.jpg "
+      alt="backgroundImage"
+    /> -->
     <div class="container">
-      <div class="circle-container w-px fixed">
-        <div
-          class="circle bg-yellow-400 p-5 rounded-br-full -mr-14 -ml-[30px]"
-        >
+      <div class="circle-container absolute top-0 -ml-[25px]">
+        <div class="circle bg-yellow-400 p-6 py-4 rounded-br-full">
           <button class="close">
-            <i class="fas fa-times text-xl"></i>
+            <i class="fas fa-times text-xl -ml-[7px] fixed -mt-5 z-[-1] text-gray-800"></i>
           </button>
           <button id="open">
-            <i class="fas fa-bars text-lg"></i>
+            <i class="fas fa-bars text-lg -ml-3 text-gray-800"></i>
           </button>
         </div>
       </div>
-      <div class="content flex flex-col items-center relative">
-        <div class="text fixed left-80 mr-72 top-4">
+      <div class="content flex flex-col items-center absolute top-0">
+        <div class="text relative left-[275px] mr-[550px] top-10 text-gray-800 overflow-hidden">
           <h1 class="font-bold font-sans">Amazing Headphone</h1>
           <p class="text-sm">
             Lorem ipsum, dolor sit amet consectetur adipisicingt. Soluta vitae
-            ex ea, maxime explicabo ut debitis fugit temporibnt praesentium
-            blanditiis enim, dolor numquam illum, ipsal animi laudantiulfo Lorem
-            ipsum, dolor sit amet consectetur adipisi elit. Soluta vitae ex ea,
-            maxime explicabo
+            ex ea emarlfa, maxime explicabo ut debitis fugit temporibntf gooas
+            praesentium howsf gs vaxe blanditiis enim, dolor numquam illum,
+            ipsal animi laudantiulfo Lorem ipsum colta dolor sit amet dolor duer
+            consecteturd ffa adipisi elit. Soluta vitae ex
           </p>
         </div>
-
         <img
-          class="absolute w-[500px] h-[300px] top-32"
+          class="absolute w-[500px] h-[260px] top-[150px]"
           src="./hdphon.jpg"
           alt="Headphone"
         />
       </div>
-      <!-- <img class="" src="./gray.jpg" alt="" /> -->
     </div>
-    <nav class="absolute bottom-14 left-6">
-      <ul>
-        <li><i class="fas fa-home"></i> Home</li>
-        <li><i class="fa-solid fa-circle-info"></i> About</li>
-        <li><i class="fa-solid fa-phone"></i> Contact</li>
+    <nav class="absolute bottom-10 left-2 flex flex-col">
+      <ul class="flex flex-col gap-4 font-semibold text-sm cursor-pointer text-gray-800">
+        <li class="ml-1"><i class="fas fa-home"></i> Home</li>
+        <li class="ml-5"><i class="fa-solid fa-user"></i> About</li>
+        <li class="ml-10"><i class="fa-solid fa-phone"></i> Contact</li>
       </ul>
     </nav>
   </body>
