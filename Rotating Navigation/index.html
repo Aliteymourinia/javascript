@@ -12,48 +12,56 @@
     />
     <title>My Project</title>
   </head>
-  <body class="flex flex-col items-center justify-center h-full m-0 relative">
-    <!-- <img
+  <body
+    id="Body"
+    class="flex flex-col items-center justify-center h-screen m-0 relative overflow-hidden transition-transform duration-500"
+  >
+  <img id="contentBackground" class="z-[0] w-screen transition-transform duration-500 " src="./white.jpg" alt="">
+    <img
       id="backgroundImage"
-      class="w-full h-full object-cover absolute z-[0]"
+      class="w-screen h-screen object-cover absolute z-[-1] rotate-0"
       src="./gray.jpg "
       alt="backgroundImage"
-    /> -->
-    <div class="container">
-      <div class="circle-container absolute top-0 -ml-[25px]">
-        <div class="circle bg-yellow-400 p-6 py-4 rounded-br-full">
-          <button class="close">
-            <i class="fas fa-times text-xl -ml-[7px] fixed -mt-5 z-[-1] text-gray-800"></i>
-          </button>
-          <button id="open">
-            <i class="fas fa-bars text-lg -ml-3 text-gray-800"></i>
-          </button>
-        </div>
+      />
+      <div class="container">
       </div>
-      <div class="content flex flex-col items-center absolute top-0">
-        <div class="text relative left-[275px] mr-[550px] top-10 text-gray-800 overflow-hidden">
-          <h1 class="font-bold font-sans">Amazing Headphone</h1>
-          <p class="text-sm">
-            Lorem ipsum, dolor sit amet consectetur adipisicingt. Soluta vitae
-            ex ea emarlfa, maxime explicabo ut debitis fugit temporibntf gooas
-            praesentium howsf gs vaxe blanditiis enim, dolor numquam illum,
-            ipsal animi laudantiulfo Lorem ipsum colta dolor sit amet dolor duer
-            consecteturd ffa adipisi elit. Soluta vitae ex
+      <div class="circle relative bg-yellow-400 p-10 py-7 bottom- right-[550px] bottom-[37.30em] rounded-br-full cursor-pointer z-0 ">
+        <button id="close" class=" absolute text-xl bottom-5 right-6 text-gray-800 hidden">
+          <i
+            class="fas fa-times"
+          ></i>
+        </button>
+        <button id="open" class="absolute text-lg right-6 bottom-5 text-gray-800 ">
+          <i class="fas fa-bars "></i>
+        </button>
+      </div>
+      <nav class="absolute left-2 bottom-12 flex flex-col z-[1] text-white">
+        <ul class="flex flex-col gap-4 font-semibold text-sm cursor-pointer">
+          <li class="ml-1"><i class="fas fa-home"></i> Home</li>
+          <li class="ml-5"><i class="fa-solid fa-user"></i> About</li>
+          <li class="ml-10"><i class=" fa-solid fa-phone"></i> Contact</li>
+        </ul>
+      </nav>
+    </div>
+      <div id="content" class="content flex flex-col items-center absolute z-10 top-12 transition-transform duration-500">
+        <div
+        class="text relative text-gray-800 left-[350px] -top-10 mr-[650px]" 
+        >
+        <h1 class="font-bold font-sans">Amazing Headphone</h1>
+        <p class="text-sm">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quam quo fugit quidem  est, necessitatibus hic officiis repudiandae eveniet, pariatur vitae rerum. Temporibus, ad perspiciatis dolores libero nesciunt quos aliquid!
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quam quo fugit lor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis at voluptas saepe est ullam, labore libero et cupiditate necessitatibus ex nobis temporibus illo aspernatur nihil non enim quis recusandae earum?
           </p>
-        </div>
+        </div>   
         <img
-          class="absolute w-[500px] h-[260px] top-[150px]"
+          class="absolute w-[500px] h-[260px] top-[135px] right-72"
           src="./hdphon.jpg"
           alt="Headphone"
         />
+        <p class="absolute text-sm left-[351px] top-[406px] mr-72"> Lorem ipsum dolor mer sit, amet consectetur por s ipsum  adipisicing elit. Dolore amet similique veniam repellat opa, sint cum mollitiaLorem ipsum dolor sit amet, consectetur adipisicing elit. Error asperiores porro expedita iure op officiis ipsum eiu a, molestias labore recusandae reiciendis deserunt sit nesciunt sapiente enim dignissimos are repellat corporis possimus dolorem? </p>
       </div>
     </div>
-    <nav class="absolute bottom-10 left-2 flex flex-col">
-      <ul class="flex flex-col gap-4 font-semibold text-sm cursor-pointer text-gray-800">
-        <li class="ml-1"><i class="fas fa-home"></i> Home</li>
-        <li class="ml-5"><i class="fa-solid fa-user"></i> About</li>
-        <li class="ml-10"><i class="fa-solid fa-phone"></i> Contact</li>
-      </ul>
-    </nav>
-  </body>
-</html>
+    <div>
+    </body>
+    </html>
+    
