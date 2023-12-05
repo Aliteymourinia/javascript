@@ -1,12 +1,4 @@
-// const panels = document.querySelectorAll(".panel");
-// panels.forEach((panel) => {
-//   panel.addEventListener("click", () => {
-//     panels.forEach((otherPanel) => {
-//       otherPanel.classList.remove("grow");
-//     });
-//     panel.classList.add("grow");
-//   });
-// });
+
 const container = document.querySelector(".container");
 const panels = container.querySelectorAll(".panel");
 
