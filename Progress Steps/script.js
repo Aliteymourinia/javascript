@@ -3,7 +3,7 @@ const next = document.querySelector("#next");
 const prev = document.querySelector("#prev");
 const circles = document.querySelectorAll(".circle");
 let currentActive = 0;
-const pixelValues = [, 260, 560, 860];
+const pixelValues = [, 260, 700, 1060];
 next.addEventListener("click", () => {
   currentActive++;
   prev.disabled = false;
