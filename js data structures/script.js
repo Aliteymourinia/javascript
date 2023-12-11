@@ -29,7 +29,6 @@ const user2 = {
   name: "Bob",
   passWord: "secret2992",
   job: "teacher",
-
   hobby: ["soccer", "movie", "climbing", "race"], // we can add array in object.
 };
 // console.log(user2.name); // access them this way
