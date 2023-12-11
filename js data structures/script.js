@@ -13,6 +13,36 @@ var functionList = [
     // console.log(functionList);
   },
 ];
-
 var colors = [["red", "blue", "green"]]; //we can have array in array.
 var mixList = ["apple", 1, true, undefined, function () {}]; // we can have mix value in array.
+
+//object:
+const dog = {
+  name: "jacky",
+  age: 5,
+  sound: function () {
+    console.log("haw haw"); // we can add function to object.
+  },
+};
+//objectArray:
+const user2 = {
+  name: "Bob",
+  passWord: "secret2992",
+  job: "teacher",
+
+  hobby: ["soccer", "movie", "climbing", "race"], // we can add array in object.
+};
+// console.log(user2.name); // access them this way
+// console.log(user2.hobby[0]);  access them this way
+
+//ArrayObject:
+const list2 = [
+  {
+    userName: "andy",
+    passWord: "secret2552",
+  },
+  {
+    userName: "jody",
+    passWord: "pss96s69",
+  },
+];
