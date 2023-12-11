@@ -1,3 +1,4 @@
+//Array
 var list = ["tiger", "cat", "bird"];
 list.pop("bird"); //  array method for remove selected value.
 list.push("dog"); // array method for add new value to end of list.
