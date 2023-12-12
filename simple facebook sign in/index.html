@@ -5,16 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <form>
-      <h1 class="absolute text-blue-600 text-2xl font-bold left-[24em] top-40   ">
+      <h1 class="absolute text-blue-600 text-2xl font-bold left-[24em] top-40">
         FACEBOOK
       </h1>
-      <div class=" relative flex flex-col gap-1 w-80 left-[30em] top-56">
-        username<input class="border outline-4 border-black" type="username" />
-        password <input class="border outline-4 border-black" type="password" />
+      <div class="relative flex flex-col gap-1 w-80 left-[30em] top-56">
+        username<input
+          id="userName"
+          class="border outline-4 border-black"
+          type="username"
+        />
+        password
+        <input
+          id="passWord"
+          class="border outline-4 border-black"
+          type="password"
+        />
+        <input
+          id="submit"
+          class="bg-blue-800 text-white cursor-pointer active:scale-95 hover:bg-blue-600 rounded-sm w-32 h-10 my-2 mx-24"
+          type="submit"
+        />
       </div>
     </form>
   </body>

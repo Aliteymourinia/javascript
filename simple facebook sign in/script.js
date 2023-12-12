@@ -1,3 +1,6 @@
+const submit = document.querySelector("#submit");
+const userName = document.querySelector("#userName");
+const passWord = document.querySelector("#passWord");
 const database = [
   {
     username: "ali",
@@ -14,3 +17,9 @@ const newsFeed = [
     timeline: "Javascript is so cool!",
   },
 ];
+submit.addEventListener("click", () => {
+  if (userName === database[0].username && passWord === database[0].password) {
+    prompt("welcome");
+  } else {
+  }
+});
