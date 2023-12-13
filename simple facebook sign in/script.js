@@ -6,23 +6,27 @@ const error = document.querySelector("#error");
 database = [
   {
     username: "ali",
-    password: "pss",
+    password: "ss",
   },
 ];
 submit.addEventListener("click", (event) => {
   event.preventDefault();
   const userNameValue = userName.value;
   const passWordValue = passWord.value;
-  if (userName.Value == null && passWord.Value == null) {
+  if (userNameValue == "" && passWordValue == "") {
     emptyField.classList.remove("hidden");
+    emptyField.innerHTML = "Please fill the required fields !";
   } else if (
-    userNameValue !== database[0].username ||
-    passWordValue !== database[0].password
+    userNameValue === database[0].username &&
+    passWordValue === database[0].password
   ) {
     emptyField.classList.add("hidden");
     error.classList.remove("hidden");
-  } else {
-    error.classList.add("text-green-700");
+    error.classList.add("text-green-500");
     error.innerHTML = "welcome :)";
+  } else {
+    emptyField.classList.add("hidden");
+    error.classList.remove("hidden");
+    error.innerHTML("wrong username or password");
   }
 });
