@@ -1,8 +1,7 @@
 const submit = document.querySelector("#submit");
 const userName = document.querySelector("#userName");
 const passWord = document.querySelector("#passWord");
-const emptyField = document.querySelector("#emptyField");
-const error = document.querySelector("#error");
+const message = document.querySelector("#message");
 database = [
   {
     username: "ali",
@@ -13,19 +12,15 @@ submit.addEventListener("click", (event) => {
   event.preventDefault();
   const userNameValue = userName.value;
   const passWordValue = passWord.value;
-  if (userNameValue == "" && passWordValue == "") {
-    emptyField.classList.remove("hidden");
-    emptyField.innerHTML = "Please fill the required fields !";
-  } else if (
+  if (
     userNameValue === database[0].username &&
     passWordValue === database[0].password
   ) {
-    emptyField.classList.add("hidden");
-    error.classList.remove("hidden");
-    error.classList.add("text-green-500");
-    error.innerHTML = "welcome :)";
+    message.innerHTML = "welcome :)";
+    message.classList.add("text-green-500");
   } else {
-    emptyField.classList.add("hidden");
-    error.classList.remove("hidden");
+    message.innerHTML = "wrong username or password !";
+    message.classList.add("text-red-500");
+    message.classList.remove("text-green-500");
   }
 });
