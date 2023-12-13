@@ -27,6 +27,5 @@ submit.addEventListener("click", (event) => {
   } else {
     emptyField.classList.add("hidden");
     error.classList.remove("hidden");
-    error.innerHTML("wrong username or password");
   }
 });
