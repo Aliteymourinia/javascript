@@ -18,6 +18,12 @@ submit.addEventListener("click", (event) => {
   ) {
     message.innerHTML = "welcome :)";
     message.classList.add("text-green-500");
+    message.classList.remove("text-red-500");
+  } else if (userNameValue === "" && passWordValue === "") {
+    message.classList.remove("text-green-500");
+    message.classList.remove("text-red-500");
+    message.innerHTML = "please fill required field !";
+    message.classList.add("text-yellow-600");
   } else {
     message.innerHTML = "wrong username or password !";
     message.classList.add("text-red-500");
