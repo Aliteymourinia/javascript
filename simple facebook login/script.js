@@ -22,10 +22,10 @@ submit.addEventListener("click", (event) => {
   } else if (userNameValue === "" && passWordValue === "") {
     message.classList.remove("text-green-500");
     message.classList.remove("text-red-500");
-    message.innerHTML = "please fill required field !";
+    message.innerHTML = "Please fill required field !";
     message.classList.add("text-yellow-600");
   } else {
-    message.innerHTML = "wrong username or password !";
+    message.innerHTML = "Wrong username or password !";
     message.classList.add("text-red-500");
     message.classList.remove("text-green-500");
   }
