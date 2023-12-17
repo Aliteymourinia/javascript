@@ -16,7 +16,7 @@ submit.addEventListener("click", (event) => {
     userNameValue === database[0].username &&
     passWordValue === database[0].password
   ) {
-    message.innerHTML = "welcome :)";
+    message.innerHTML = "Welcome :)";
     message.classList.add("text-green-500");
     message.classList.remove("text-red-500");
   } else if (userNameValue === "" && passWordValue === "") {
