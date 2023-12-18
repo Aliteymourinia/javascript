@@ -5,6 +5,7 @@ const todos = [
   "study javascript",
   "go shopping",
 ];
-for (var i = 0; i < todos.length; i++) {
+var todosLength = todos.length; //this define todos=5 it means todosLength = todos.length
+for (var i = 0; i < todosLength; i++) {
   todos.pop();
 }
