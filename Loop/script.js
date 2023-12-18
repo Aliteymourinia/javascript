@@ -9,3 +9,18 @@ const todos = [
 // for (var i = 0; i < todosLength; i++) {
 //   todos.pop();
 // }
+
+//increase:
+
+// var counterOne = 0;
+// while (counterOne < 10) {
+//   console.log(counterOne);
+//   counterOne++;
+// }
+
+//decrease:
+var counterOne = 10;
+while (counterOne > 0) {
+  counterOne--;
+  console.log(counterOne);
+}
