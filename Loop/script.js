@@ -35,6 +35,7 @@ var todosLength = todos.length; //this define todos=5 it means todosLength = tod
 // } while (counterTwo > 0);
 
 //For each:
-todos.forEach(function (todos) {
-  console.log(todos);
+todos.forEach(function (i) {
+  i = i + "!";
+  console.log(i);
 });
