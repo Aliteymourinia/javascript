@@ -5,12 +5,12 @@ const todos = [
   "study javascript",
   "go shopping",
 ];
-// var todosLength = todos.length;    //this define todos=5 it means todosLength = todos.length
+var todosLength = todos.length; //this define todos=5 it means todosLength = todos.length
 // for (var i = 0; i < todosLength; i++) {
 //   todos.pop();
 // }
 
-//increase:
+//while-increase:
 
 // var counterOne = 0;
 // while (counterOne < 10) {
@@ -18,9 +18,9 @@ const todos = [
 //   counterOne++;
 // }
 
-//decrease:
-var counterOne = 10;
-while (counterOne > 0) {
-  counterOne--;
-  console.log(counterOne);
-}
+//while-decrease:
+// var counterOne = 10;
+// while (counterOne > 0) {
+//   console.log(counterOne);
+//   counterOne--;
+// }
