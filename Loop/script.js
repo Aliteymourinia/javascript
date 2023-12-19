@@ -19,14 +19,22 @@ var todosLength = todos.length; //this define todos=5 it means todosLength = tod
 // }
 
 //while-decrease:
+
 // var counterOne = 10;
 // while (counterOne > 0) {
 //   console.log(counterOne);
 //   counterOne--;
 // }
+
 // do while:
-var counterTwo = 20;
-do {
-  console.log(counterTwo);
-  counterTwo--;
-} while (counterTwo > 0);
+
+// var counterTwo = 20;
+// do {
+//   console.log(counterTwo);
+//   counterTwo--;
+// } while (counterTwo > 0);
+
+//For each:
+todos.forEach(function (todos) {
+  console.log(todos);
+});
