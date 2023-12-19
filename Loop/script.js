@@ -24,3 +24,9 @@ var todosLength = todos.length; //this define todos=5 it means todosLength = tod
 //   console.log(counterOne);
 //   counterOne--;
 // }
+// do while:
+var counterTwo = 20;
+do {
+  console.log(counterTwo);
+  counterTwo--;
+} while (counterTwo > 0);
