@@ -26,7 +26,8 @@ const newsFeed = [
     password: "javascript is pretty cool!",
   },
 ];
-function isUserValid(username, password) {  // Checks that the user information is correct.
+// Checks that the user information is correct.
+function isUserValid(username, password) {
   for (var i = 0; i < database.length; i++) {
     if (
       database[i].username === username &&
@@ -37,7 +38,8 @@ function isUserValid(username, password) {  // Checks that the user information 
   }
   return false;
 }
-function signIn(username, password) { // it will appl
+//this Applies if the user information is true and false:
+function signIn(username, password) {
   if (isUserValid(username, password)) {
     console.log(newsFeed);
   } else {
