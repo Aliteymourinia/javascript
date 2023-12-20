@@ -37,7 +37,7 @@ function isUserValid(username, password) {  // Checks that the user information 
   }
   return false;
 }
-function signIn(username, password) {
+function signIn(username, password) { // it will appl
   if (isUserValid(username, password)) {
     console.log(newsFeed);
   } else {
