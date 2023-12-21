@@ -38,7 +38,7 @@ function isUserValid(username, password) {
   }
   return false;
 }
-//this Applies if the user information is true and false:
+//this Applies if the user information is true and false :
 function signIn(username, password) {
   if (isUserValid(username, password)) {
     console.log(newsFeed);
