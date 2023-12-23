@@ -26,7 +26,7 @@ const newsFeed = [
     password: "javascript is pretty cool!",
   },
 ];
-// Checks that the user information is correct:
+// Checks that the user information is correct  :
 function isUserValid(username, password) {
   for (var i = 0; i < database.length; i++) {
     if (
