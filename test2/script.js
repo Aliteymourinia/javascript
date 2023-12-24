@@ -1,2 +1,2 @@
-document.querySelector("h1").style.background = "red";
+document.querySelector("h1");
 console.log();
