@@ -66,8 +66,18 @@ var automatedAnswer =
 // }
 
 //ternary operator:
-
-
+function experiencePoints() {
+  if (winBattle()) {
+    return 10;
+  } else {
+    return 1;
+  }
+}
+// i changed condition with ternary operator:
+function winBattle(bool) {
+  return bool;
+}
+var experiencePoints = winBattle(true) ? 10 : 1;
 
 //switch:
 function moveCommand(direction) {
