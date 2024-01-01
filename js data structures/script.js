@@ -64,4 +64,6 @@ var automatedAnswer =
 //     return "access denied";
 //   }
 // }
-console.log(isUserValid);
+
+//switch:
+
