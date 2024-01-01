@@ -53,7 +53,7 @@ function isUserValid(bool) {
   return bool;
 }
 
-var answer = isUserValid(true) ? "you may enter" : "access denied"; // this syntax
+var answer = isUserValid(true) ? "you may enter" : "access denied"; // this syntax is ternary operation use instead of if and else condition.
 var automatedAnswer =
   "your account # is " + isUserValid(true) ? "1234" : "not available ";
 
