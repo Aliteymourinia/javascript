@@ -65,6 +65,10 @@ var automatedAnswer =
 //   }
 // }
 
+//ternary operator:
+
+
+
 //switch:
 function moveCommand(direction) {
   var whatHappens;
