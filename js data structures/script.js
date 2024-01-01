@@ -46,3 +46,5 @@ const list2 = [
     passWord: "pss96s69",
   },
 ];
+
+//condition:
