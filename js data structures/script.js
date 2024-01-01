@@ -53,6 +53,15 @@ function isUserValid(bool) {
   return bool;
 }
 
-var answer = isUserValid(true) ? "you may enter" : "access denied";
+var answer = isUserValid(true) ? "you may enter" : "access denied"; // this syntax
 var automatedAnswer =
   "your account # is " + isUserValid(true) ? "1234" : "not available ";
+
+// function condition() {
+//   if (isUserValid(true)) {
+//     return "you may enter";
+//   } else {
+//     return "access denied";
+//   }
+// }
+console.log(isUserValid);
