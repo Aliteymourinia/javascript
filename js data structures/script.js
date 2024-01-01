@@ -66,23 +66,23 @@ var automatedAnswer =
 // }
 
 //switch:
-function moveCommand(direction){
+function moveCommand(direction) {
   var whatHappens;
-  switch (direction){
-case "forward":
-  whatHappens="you move forward";
-  break
-  case "back":
-    whatHappens="you arrived home";
-    break
-    case "right":
-      whatHappens="you found a river"
+  switch (direction) {
+    case "forward":
+      whatHappens = "you move forward";
       break;
-      case ""
-
-
-
-
-
+    case "back":
+      whatHappens = "you arrived home";
+      break;
+    case "right":
+      whatHappens = "you found a river";
+      break;
+    case "left":
+      whatHappens = "you run into a troll";
+      break;
+    default:
+      whatHappens = "please enter a valid direction";
   }
+  return whatHappens;
 }
