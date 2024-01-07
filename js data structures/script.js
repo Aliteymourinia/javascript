@@ -74,6 +74,7 @@ function experiencePoints() {
   }
 }
 // i changed condition with ternary operator:
+
 function winBattle(bool) {
   return bool;
 }
